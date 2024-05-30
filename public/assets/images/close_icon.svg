@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>close_icon-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: none } 
+		.s1 { fill: #35374c } 
+		.s2 { fill: #ffffff } 
+	</style>
+	<g id="style-guide">
+		<g id="icon-sheet">
+			<g id="icon">
+				<path id="Container" class="s0" d="m0 0h32v32h-32v-32z" />
+				<path id="Path" fill-rule="evenodd" class="s1" d="m5.43 5.43c5.91-5.91 15.48-5.91 21.39 0c5.91 5.91 5.91 15.48 0 21.39c-5.91 5.91-15.48 5.91-21.39 0c-5.91-5.91-5.91-15.48 0-21.39z" />
+				<path id="Path" class="s2" d="m21.86 21.1l-0.77 0.77c-0.42 0.42-1.11 0.42-1.53 0l-3.45-3.45l-3.45 3.45c-0.42 0.42-1.11 0.42-1.53 0l-0.77-0.77c-0.42-0.42-0.42-1.11 0-1.53l3.45-3.45l-3.45-3.45c-0.42-0.42-0.42-1.11 0-1.53l0.77-0.77c0.42-0.42 1.11-0.42 1.53 0l3.45 3.45l3.45-3.45c0.42-0.42 1.11-0.42 1.53 0l0.77 0.77c0.42 0.42 0.42 1.11 0 1.53l-3.45 3.45l3.45 3.45c0.42 0.42 0.42 1.11 0 1.53z" />
+			</g>
+		</g>
+	</g>
+</svg>

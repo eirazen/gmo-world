@@ -1,0 +1,115 @@
+@include('components/header')
+
+<body>
+    @php
+        $data = [['type' => 'corn', 'ext' => 'png'], ['type' => 'bt', 'ext' => 'jpg']];
+    @endphp
+    <div class="container d-flex flex-column justify-content-center align-items-center mt-3" id="buying">
+        <p class="h1 mb-5">Level 2</p>
+        <div class="row d-flex justify-content-between align-items-center w-100">
+            @foreach ($data as $d)
+                @php
+                    $id = 1;
+                @endphp
+
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <legend class="text-center">{{ $d['type'] == 'corn' ? 'Organic Corn' : 'BT Corn' }}</legend>
+                    @for ($i = 0; $i < 2; $i++)
+                        <div>
+                            @for ($j = 0; $j < 5; $j++)
+                                <img src="images/white.png" alt=""
+                                    id="seed_{{ $d['type'] }}_{{ $id }}"
+                                    style="border: 1px solid black; width: 70px; height: 70px;" class="hovering">
+                                @php
+                                    $id++;
+                                @endphp
+                            @endfor
+                        </div>
+                    @endfor
+                </div>
+            @endforeach
+        </div>
+    </div>
+    <div class="container d-flex flex-column justify-content-center align-items-center mt-3 d-none" id="donebuying">
+        <p class="h1 mb-5">Level 2</p>
+        <div class="row d-flex justify-content-between align-items-center w-100">
+            @foreach ($data as $d)
+                @php
+                    $id = 1;
+                @endphp
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <legend class="text-center">{{ $d['type'] == 'corn' ? 'Organic Corn' : 'BT Corn' }}</legend>
+                    @for ($i = 0; $i < 2; $i++)
+                        <div>
+                            @for ($j = 0; $j < 5; $j++)
+                                <img src="images/{{ $d['type'] }}1.{{ $d['ext'] }}" alt=""
+                                    style="width: 70px; height: 200px;" id="{{ $d['type'] }}_{{ $id }}">
+                                @php
+                                    $id++;
+                                @endphp
+                            @endfor
+                        </div>
+                    @endfor
+                </div>
+            @endforeach
+        </div>
+        <div class="row mt-5 w-100">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <input type="range" min="1" max="7" value="1" id="ranger"
+                    class="form-control w-75">
+                <div class="w-75 d-flex justify-content-between">
+                    @for ($i = 10; $i <= 70; $i += 10)
+                        <p id="trigger_{{ $i / 10 }}" class="hovering">{{ $i }} Days</p>
+                    @endfor
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            let plant = 0;
+            let idsBt = [];
+            let idsCorn = [];
+            for (let i = 1; i <= 10; i++) {
+                idsBt.push(`#bt_${i}`);
+                idsCorn.push(`#corn_${i}`);
+            }
+            let idMergedBt = idsBt.join(", ");
+            let idMergedCorn = idsCorn.join(", ");
+            $('#ranger').on('input', function(e) {
+                // alert('hello');
+                let val = e.target.value;
+                $(idMergedBt).attr('src', `images/bt${val}.jpg`);
+                $(idMergedCorn).attr('src', `images/corn${val}.png`);
+            });
+
+            $("img[id^='seed_bt_'], img[id^='seed_corn_']").click(function(e) {
+                // alert('hello');
+                $(this).removeAttr('class');
+                if ($(this).attr('src') !== 'images/seedling.png') {
+                    plant++;
+                }
+                // alert(plant);
+                $(this).attr('src', `images/seedling.png`);
+                starter();
+            });
+
+            function starter() {
+                if (plant >= 20) {
+                    $("#buying").addClass('d-none');
+                    $("#donebuying").removeClass('d-none');
+                }
+            }
+            $("p[id^='trigger_']").click(function() {
+                let val = $(this).attr('id').split('_')[1];
+
+                if ($("#ranger").val() != val) {
+                    $("#ranger").val(val);
+                    $("#ranger").trigger('input');
+                }
+            })
+        });
+    </script>
+</body>
+@include('components.footer')

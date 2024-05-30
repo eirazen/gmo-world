@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D958CD65-181C-4C64-8FDF-0C61B984003A</title>
+    <g id="Sim-01---Genetically-Modified-Corn-Virtual-Lab" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Timeline-finish" transform="translate(-754.000000, -243.000000)">
+            <g id="icon" transform="translate(754.000000, 243.000000)">
+                <path d="M12,0 C18.627417,-1.21743675e-15 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 8.11624501e-16,18.627417 0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="Path" fill="#F0F0F0"></path>
+                <g id="Group-2" transform="translate(6.000000, 6.000000)" fill="#D8D8D8" stroke="#444444">
+                    <rect id="Rectangle" x="5.5" y="0.5" width="1" height="11" rx="0.5"></rect>
+                    <rect id="Rectangle-Copy" transform="translate(6.000000, 6.000000) rotate(-270.000000) translate(-6.000000, -6.000000) " x="5.5" y="0.5" width="1" height="11" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,67 @@
+<div class="container">
+    <header>
+        <h1>@{{ title }}</h1>
+        <p class="text-secondary">@{{ description }}</p>
+    </header>
+    <main>
+        <button
+            type="button"
+            ng-repeat="b in buttons"
+            class="btn btn-sm @{{ b.class }}"
+            ng-click="startgame(b.type);"
+        >
+            @{{ b.type }}
+        </button>
+    </main>
+</div>
+
+<div
+    class="modal fade"
+    id="usermodal"
+    tabindex="-1"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+>
+    <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Create your profile
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Your name here..."
+                    />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>52DB76C5-3DF0-4B7F-8205-C38B3E84F3BC</title>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="style-guide" transform="translate(-152.000000, -996.000000)">
+            <g id="Group" transform="translate(120.000000, 964.000000)">
+                <g id="icon-arrow-white" transform="translate(32.000000, 32.000000)">
+                    <rect id="Placeholder" x="0" y="0" width="16" height="16"></rect>
+                    <polyline id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="3 8 13 8 8.33333333 3.33333333"></polyline>
+                    <polyline id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(8.000000, 10.333333) scale(1, -1) translate(-8.000000, -10.333333) " points="3 12.6666667 13 12.6666667 8.33333333 8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

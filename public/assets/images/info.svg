@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E08E30CF-8EFA-4204-B1F8-195BF740626B</title>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="style-guide" transform="translate(-312.000000, -996.000000)">
+            <g id="Group" transform="translate(120.000000, 964.000000)">
+                <g id="icon-info" transform="translate(192.000000, 32.000000)">
+                    <rect id="Placeholder" x="0" y="0" width="16" height="16"></rect>
+                    <circle id="Path" stroke="#113A4C" stroke-width="2" cx="8" cy="8" r="7"></circle>
+                    <circle id="Path" fill="#113A4C" cx="7.66666667" cy="5" r="1"></circle>
+                    <polyline id="Path" stroke="#113A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.66666667 8 8 8 8 10.996073"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
